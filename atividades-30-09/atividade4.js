@@ -9,7 +9,7 @@ let livro2 = {
     n_pags : 876
 }
 function obterDescricao(livro1){
-    return livro1
+    return 'O livro é: ' + livro1.nome + '\nDo autor: ' + livro1.Autor + '\nE tem: ' + livro1.N_pags +' páginas'
 }
 
 console.log(obterDescricao(livro1,livro2));
