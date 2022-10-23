@@ -4,6 +4,6 @@ let livro = {
     N_pags : 876
 }
 
-for(let prop in livro){
-    console.log(prop +':' ,livro[prop]);
+for(let x in livro){
+    console.log(x +':' ,livro[x]);
 }
