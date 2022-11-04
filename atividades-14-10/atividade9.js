@@ -4,14 +4,13 @@ let familia = [
     [ "Homer", "Marge", "Bart" ]
 ];
 function tabula(familia) {
-let x;
 
-for (let i = 0; i < familia.length; i++) {
+for (let i in familia) {
         for (let j = 0; j < familia[i].length; j++) {
-        console.log('\t'+familia[i][j]);
+        console.log( ''+familia[i][j]);
     }
     }
-return x;
+
 }
-      
+    
 tabula([familia]);
