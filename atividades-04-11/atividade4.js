@@ -6,10 +6,15 @@ class Poligonal{
     adiciona(Ponto){
     this.p = Ponto;
     }
-    
+    comprimento(){
+        return this.x + this.z
+    } 
 }
 class Ponto extends Poligonal{
-    
+    constructor(){
+       super();
+
+    }
 }
 
     let poli = new Poligonal();
