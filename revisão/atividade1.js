@@ -6,14 +6,12 @@ let cores = {
     "azure": [240, 255, 255, 1],
     "beige": [245, 245, 220, 1]
 };
-
-function geraCorCss(cores){
-    return 'rbga ' + cores.beige
-}
-
-function geraCorCss(){
-    for(i in cores){
-        return 'rgba '+cores.beige.join('-')
+    function geraCorCss(cores, cor){
+        return 'rbga (' + cores[cor] +')'
     }
-}
+    function geraCorCss(cores,cor){
+        for(i in cores){
+            return 'rgba ('+cores[cor].join('-')+')'
+        }
+    }
 console.log( geraCorCss(cores, 'beige') );
