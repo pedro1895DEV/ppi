@@ -1,31 +1,52 @@
 class Livro{
-    constructor(autor,titulo,n_pags){
-        this.a = autor;
-        this.t = titulo;
-        this.n = n_pags;
-    }
-    teste(){
-        this.a+this.t+this.n
+    constructor(autor, titulo, paginas){
+        this.autor = autor;
+        this.titulo = titulo;
+        this.paginas = paginas;
+        this.foiLido = false;
     }
 }
-class ListaDeLivros extends Livro{
-    constructor(autor,titulo,n_pags, tamanho){
-        super(autor,titulo,n_pags);
-        this.tam = tamanho;
+class ListaDeLivros{
+    constructor(){
+        this.lista = [];
     }
-    adicionaLivro(){
-        return this.a + this.t + this.n + this.tam
+    adicionaLivro(Livro){
+        this.lista.push(Livro);
+    }
+    removeLivro(index){
+        this.lista.splice(index,1);
+    }
+    marcarComoLido(index){
+        this.lista[index].foiLido = true;
     }
     totalDePaginasNaoLidas(){
+        let total = this.lista.reduce(
+            function( acc, livro) {
+                if(livro.foiLido != true){
+                    acc += livro.paginas;
+                }
 
+                return acc;
+
+            }, 0 );
+
+        return total;
     }
     escreve(){
-        
+        for(let f of this.lista){
+            console.log(`"${f.titulo}", ${f.autor} (${f.paginas} páginas) - ${this.variavelLido(f)}`);
+        }
     }
-    marcarComoLido(){
-
+    variavelLido(item){
+        if(item.foiLido == true){
+            return 'lido';
+        }
+        else{
+            return 'não lido';
+        }
     }
 }
+
 let livro1 = new Livro('Machado de Assis', 'Dom Casmurro', 250);
 let livro2 = new Livro('Machado de Assis', 'Quincas Borba', 360);
 let lista = new ListaDeLivros();
