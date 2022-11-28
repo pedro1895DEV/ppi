@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>atividade2</title>
+</head>
+<body>
+    <button onmousemove="mudaTexto()", onmouseout="volta()">Mudar texto</button>
+    <p id="texto">Texto sem cursor sobre o botão!</p>
+</body>
+    <script>
+        function mudaTexto(){
+            document.getElementById("texto").innerHTML = "Texto alterado ao colocar o cursor!"
+        }
+        function volta(){
+            document.getElementById("texto").innerHTML = "Texto sem cursor sobre o botão!"
+        }
+    </script>
+</html>
