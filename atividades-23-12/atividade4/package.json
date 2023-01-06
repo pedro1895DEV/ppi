@@ -1,0 +1,10 @@
+{
+    "name": "lista10",
+    "version": "1.0.0",
+    "description": "Programação para Internet I",
+    "dependencies": {
+        "to-capital-case": "^1.0.0",
+        "to-constant-case": "^1.0.0",
+        "to-space-case": "^1.0.0"
+    }
+}
