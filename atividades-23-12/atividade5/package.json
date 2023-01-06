@@ -1,0 +1,14 @@
+{
+    "name": "lista10",
+    "version": "1.0.0",
+    "description": "Programação para Internet I",
+    "dependencies": {
+        "to-capital-case": "^1.0.0",
+        "to-constant-case": "^1.0.0",
+        "to-space-case": "^1.0.0"
+    },
+    "devDependencies": {
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1"
+    }
+}
