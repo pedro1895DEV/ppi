@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", function(req, res){
     res.send("<h1>Primeira tela</>");
-    app.get('/teste',
+    app.get('/pedro',
         (req, res) => { res.send("<h1>Segunda tela</>")}
     )
 })
