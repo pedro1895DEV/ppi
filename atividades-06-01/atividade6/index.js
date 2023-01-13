@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 app.get('/temp/:fahr'
     ,
@@ -18,12 +20,14 @@ app.listen(
 );
 
 function consultar(){
+    let numero = $('#valor').val();
     $.ajax({
         type : 'GET',
-        url : 'https://localhost:3000',
-        success : function (dados) {
-            $("resultado").html(dados)
-        },
-        dataType : 'json'
+        url : `http://localhost:3000/temp/${numero}`,
+        success : function (res) {
+            $('#fahr').html(`Valor em Fahrenheit: ${res.fahrenheit}`),
+            $('#cel').html(`Valor em Celsius: ${res.celsius}`),
+            $('#kelv').html(`Valor em Kelvin: ${res.kelvin}`)
+        }
     })
 }
