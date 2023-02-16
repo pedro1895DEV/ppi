@@ -1,19 +1,18 @@
-function calc(op,a,b){
-    function adiciona(){
-        if( op === 0){
+function calc(op, a, b) {
+    function adiciona() {
+        if (op === 0) {
             console.log(a + b);
         }
-        if(op === 1){
+        if (op === 1) {
             console.log(a - b);
         }
-        if(op === 2){
+        if (op === 2) {
             console.log(a * b);
         }
-        if(op === 3){
-        console.log(a / b);
+        if (op === 3) {
+            console.log(a / b);
         }
     }
     adiciona();
 }
-calc(2, 15 , 10);
-
+calc(2, 15, 10);
