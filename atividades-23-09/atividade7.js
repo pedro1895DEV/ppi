@@ -7,5 +7,9 @@ function ehPrimo(num) {
     }
   return true;
 };
-console.log(ehPrimo());
-for (let i = 2; i < 30; i++) if (ehPrimo(i)) console.log(i); 
+
+for(let i =2; i < 30; i++){
+    if(ehPrimo(i)){
+        console.log(i);
+    }
+}
