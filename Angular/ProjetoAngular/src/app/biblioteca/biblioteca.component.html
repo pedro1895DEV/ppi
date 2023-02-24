@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Angular</title>
+</head>
+<header><img src="https://www.ifb.edu.br/images/IFBVertical.png" id="img1"></header>
+
+<body>
+  <div [class] = "cor">
+    <br>
+    <h1>Biblioteca IFB - Acesso</h1>
+    <img
+      src="https://marketplace.canva.com/EAFEits4-uw/1/0/1600w/canva-boy-cartoon-gamer-animated-twitch-profile-photo-oEqs2yqaL8s.jpg"
+      id="img2">
+      <div id ="caixa1">Nome do usuário: {{usuario}}</div>
+      <div id ="caixa2">Tipo de usuário: {{tipo}}</div>
+
+    <div id="botões">
+      <button (click)="muda()" id="button1" class="button floatLeft">Alterar para usuário do tipo Premium</button>
+      <button (click)="desmuda()" id="button2" class="button floatLeft">Alterar para usuário do tipo Padrão</button>
+      
+    </div>
+      <br>
+  </div>
+</body>
+
+<footer>
+  Pedro Andrade - 2023
+  <a href="https://github.com/pedro1895dev" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" id="img3"></a>
+</footer>
+
+</html>
