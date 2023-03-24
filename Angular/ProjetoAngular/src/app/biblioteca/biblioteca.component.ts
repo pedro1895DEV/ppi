@@ -12,22 +12,22 @@ export class BibliotecaComponent {
 
   muda() {
     this.tipo = 'Premium';
-    
-    if(this.tipo === "Premium"){
+
+    if (this.tipo === "Premium") {
       this.cor = 'verde'
     }
-    if(this.tipo === "Padrão"){
+    if (this.tipo === "Padrão") {
       this.cor = "roxo"
     }
   }
 
-  desmuda(){
+  desmuda() {
     this.tipo = 'Padrão';
-    
-    if(this.tipo === "Premium"){
+
+    if (this.tipo === "Premium") {
       this.cor = 'verde'
     }
-    if(this.tipo === "Padrão"){
+    if (this.tipo === "Padrão") {
       this.cor = "roxo"
     }
   }
