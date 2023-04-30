@@ -1,4 +1,4 @@
-let familias = {};
+const familias = {};
 
 familias.Flinstones = {};
 familias.Jetsons = {}
