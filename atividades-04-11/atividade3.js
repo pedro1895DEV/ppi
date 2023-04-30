@@ -1,10 +1,13 @@
-class Ponto{
-    constructor(x,y){
-        this.a = x;
-        this.b = y;
+class Ponto {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
     }
-    distancia(){
-        return Math.sqrt((this.a-this.b)**0+(this.a-this.b)**0)*2
+    distancia(outroPonto) {
+        const distanciaX = outroPonto.x - this.x;
+        const distanciaY = outroPonto.y - this.y;
+        const distancia = Math.sqrt(distanciaX ** 2 + distanciaY ** 2);
+        return distancia;
     }
 }
 
