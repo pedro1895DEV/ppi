@@ -4,6 +4,6 @@ cores.push('laranja');
 cores.push('cinza');
 
 cores.splice(6)
-for(let i of cores){
-console.log('- ' + i);
+for (let i of cores) {
+    console.log('- ' + i);
 };

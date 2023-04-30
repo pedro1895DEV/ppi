@@ -1,4 +1,4 @@
-function ehPalindromo(string){
+function ehPalindromo(string) {
     return string === string.split('').reverse().join('')
 }
 

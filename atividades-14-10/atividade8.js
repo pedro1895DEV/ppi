@@ -1,4 +1,4 @@
-function inverte(string){
+function inverte(string) {
     return string.split('').reverse().join('');
 }
 
