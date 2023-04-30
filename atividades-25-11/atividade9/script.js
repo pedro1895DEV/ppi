@@ -8,7 +8,7 @@ function rodar() {
     $('span').toggleClass('destaque')
 }
 
-function voltar(){
+function voltar() {
     $('p').css(
         'opacity', 100
     )

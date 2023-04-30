@@ -1,5 +1,5 @@
-$('p').on('click', function() {
+$('p').on('click', function () {
     $(this).css(
-    'color','green'
-    ) 
+        'color', 'green'
+    )
 });

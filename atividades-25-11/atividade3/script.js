@@ -1,10 +1,12 @@
-function adiciona() {
-    let x = ['texto1', 'texto2', 'texto3', 'texto4']
-    for (let i = 0; i < 1; i++) {
-        let p = document.createElement('p')
-        p.innerHTML = x[i]
+let x = ['texto1', 'texto2', 'texto3', 'texto4'];
 
-        let div = document.getElementById('text');
-        div.appendChild(p);
-    }
-}
+const paragrafos = document.getElementById("texto");
+const botao = document.getElementById("botao");
+
+let indiceTexto = 0;
+botao.addEventListener('click', () => {
+    const novoParagrafo = document.createElement('p');
+    novoParagrafo.textContent = x[indiceTexto];
+    texto.appendChild(novoParagrafo);
+    indiceTexto = (indiceTexto + 1) % x.length;
+});
