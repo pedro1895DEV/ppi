@@ -1,16 +1,15 @@
 let pessoa = {
-  primeiroNome : '',
-  ultimoNome : '',
+  primeiroNome: '',
+  ultimoNome: '',
 
-get nome (){
-  return this.primeiroNome + this.ultimoNome;
-},
-set nome(x){
-  this.primeiroNome = x ;
-},
-set nome (x){
-  this.ultimoNome = '';  
-}
+  get nome() {
+    return `${this.primeiroNome} ${this.ultimoNome}`;
+  },
+  set nome(x) {
+    let [nPrimeiroNome, nUltimoNome] = x.split(' ');
+    this.primeiroNome = nPrimeiroNome;
+    this.ultimoNome = nUltimoNome || '';
+  }
 
 }
 pessoa.primeiroNome = 'Lucas ';

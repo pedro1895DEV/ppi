@@ -1,31 +1,31 @@
 let contaX = {
-    nome: 'José Fontes',
-    saldo: 1000,
-    deposita : function(valor){
-        this.saldo += valor
-    },
-    retira : function(valor){
-      this.saldo -= valor
-    },
-    transferePara : function(contaY , valor){
-      this.saldo -= valor, contaY.saldo += valor
-    }
+  nome: 'José Fontes',
+  saldo: 1000,
+  deposita: function (valor) {
+    this.saldo += valor
+  },
+  retira: function (valor) {
+    this.saldo -= valor
+  },
+  transferePara: function (contaY, valor) {
+    this.saldo -= valor, contaY.saldo += valor
+  }
 };
 
 let contaY = {
-    nome: 'Felipe Silva',
-    saldo: 3000,
-    deposita : function(valor){
-        this.saldo += valor
-    },
-    retira : function(valor){
-      this.saldo -= valor
-    },
-    transferePara : function(valor){
-      this.saldo -= valor, contaX.saldo += valor
-    }
+  nome: 'Felipe Silva',
+  saldo: 3000,
+  deposita: function (valor) {
+    this.saldo += valor
+  },
+  retira: function (valor) {
+    this.saldo -= valor
+  },
+  transferePara: function (valor) {
+    this.saldo -= valor, contaX.saldo += valor
+  }
 };
-    
+
 contaX.deposita(800);
 console.log(contaX.nome, contaX.saldo);
 
